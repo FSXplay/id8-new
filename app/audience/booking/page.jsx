@@ -6,7 +6,7 @@ export default function BookingPage() {
 
   const handleBooking = (e) => {
     e.preventDefault();
-    router.push("/payment-success");
+    router.push("/audience/purchased");
   };
 
   return (
@@ -16,7 +16,7 @@ export default function BookingPage() {
         {/* Image Section */}
         <div className="relative h-80 md:h-auto">
           <img
-            src="https://images.pexels.com/photos/45875/pexels-photo-45875.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="/apsara-rising.jpg"
             alt="Cambodian traditional dance"
             className="w-full h-full object-cover"
           />
@@ -59,7 +59,7 @@ export default function BookingPage() {
             </form>
 
             <button
-              onClick={() => router.push("/performances")}
+              onClick={() => router.push("/audience/explore")}
               className="text-sm text-zinc-400 hover:text-yellow-300 transition w-full text-center"
             >
               ← Back to Upcoming Performances

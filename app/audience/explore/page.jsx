@@ -9,19 +9,19 @@ const featuredShows = [
     title: "Apsara Rising",
     description: "A breathtaking revival of classical Cambodian dance.",
     image: "/apsara-rising.jpg",
-    link: "/booking/apsara-rising",
+    link: "/audience/booking",
   },
   {
     title: "Shadow Spirits",
     description: "Mystical puppetry and folklore come alive on stage.",
     image: "/shadow-spirit.jpg",
-    link: "/booking/shadow-spirits",
+    link: "/audience/booking",
   },
   {
     title: "Temple Echoes",
     description: "A theatrical experience set in the Angkor Empire.",
     image: "/temple.jpeg",
-    link: "/booking/temple-echoes",
+    link: "/audience/booking",
   },
 ];
 
@@ -31,13 +31,13 @@ const allShows = [
     title: "The Golden Land",
     description: "A tribute to Khmer culture and tradition.",
     image: "/golden-land.jpg",
-    link: "/booking/the-golden-land",
+    link: "/audience/booking",
   },
   {
     title: "Silk Road Dreams",
     description: "A cross-cultural journey of music and storytelling.",
     image: "/silk-road.jpg",
-    link: "/booking/silk-road-dreams",
+    link: "/audience/booking",
   },
 ];
 
