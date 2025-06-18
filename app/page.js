@@ -1,4 +1,3 @@
-// pages/login.tsx
 import Head from "next/head";
 
 export default function RoleSelectionPage() {
@@ -10,6 +9,15 @@ export default function RoleSelectionPage() {
       </Head>
 
       <div className="min-h-screen bg-zinc-900 text-white flex flex-col items-center justify-center px-4">
+        {/* Logo at the top center */}
+        <div className="flex justify-center mb-6">
+          <img
+            src="/logo.png"
+            alt="KhmerLive Logo"
+            className="w-24 h-24"
+          />
+        </div>
+
         <div className="text-center mb-10">
           <h1 className="text-3xl font-bold mb-2">Welcome to KhmerLive</h1>
           <p className="text-zinc-400">Please choose your role to continue</p>
@@ -19,7 +27,7 @@ export default function RoleSelectionPage() {
           {/* Theater Option */}
           <div className="bg-zinc-800 rounded-lg shadow-lg p-6 flex flex-col items-center hover:shadow-yellow-400/20 transition">
             <img
-              src="/images/theater-icon.png"
+              src="/theater.png"
               alt="Theater"
               className="w-20 h-20 mb-4"
             />
@@ -38,7 +46,7 @@ export default function RoleSelectionPage() {
           {/* Audience Option */}
           <div className="bg-zinc-800 rounded-lg shadow-lg p-6 flex flex-col items-center hover:shadow-yellow-400/20 transition">
             <img
-              src="/images/audience-icon.png"
+              src="/audience.png"
               alt="Audience"
               className="w-20 h-20 mb-4"
             />
