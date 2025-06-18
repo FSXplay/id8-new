@@ -16,7 +16,7 @@ export default function TheaterDashboard() {
         <aside className="w-64 bg-zinc-800 flex flex-col p-6 space-y-6">
           <div className="flex items-center space-x-4">
             <Image
-              src="/images/theater-profile.jpg"
+              src="/logo.png"
               alt="Profile"
               width={48}
               height={48}
