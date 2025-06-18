@@ -28,7 +28,7 @@ export default function RoleSelectionPage() {
               Manage livestreams, upload performances, view analytics, and customize your channel.
             </p>
             <a
-              href="/theater/login"
+              href="/theater"
               className="mt-auto bg-yellow-400 text-black py-2 px-6 rounded font-semibold hover:bg-yellow-300 transition"
             >
               Login as Theater
@@ -47,7 +47,7 @@ export default function RoleSelectionPage() {
               Explore upcoming shows, purchase tickets, and enjoy exclusive cultural performances.
             </p>
             <a
-              href="/audience/login"
+              href="/audience/explore"
               className="mt-auto bg-yellow-400 text-black py-2 px-6 rounded font-semibold hover:bg-yellow-300 transition"
             >
               Login as Audience
