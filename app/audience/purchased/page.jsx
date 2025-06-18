@@ -16,10 +16,14 @@ export default function PurchasedPage() {
 
           {/* Ticket Card */}
           <div className="bg-zinc-800 rounded-xl overflow-hidden shadow-lg flex flex-col">
-            <div
-              className="h-40 bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/performance1.jpg')" }}
-            />
+            {/* Placeholder for livestream image */}
+            <div className="h-40 bg-zinc-700 flex items-center justify-center">
+              <img
+                src="/apsara-spirit.webp"
+                alt="Apsara Spirit"
+                className="object-cover w-full h-full"
+              />
+            </div>
             <div className="p-4 flex flex-col justify-between flex-1">
               <div className="space-y-1 mb-4">
                 <h2 className="text-xl font-semibold">Apsara Spirit</h2>
@@ -40,10 +44,14 @@ export default function PurchasedPage() {
 
           {/* Another Ticket Card */}
           <div className="bg-zinc-800 rounded-xl overflow-hidden shadow-lg flex flex-col">
-            <div
-              className="h-40 bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/performance2.jpg')" }}
-            />
+            {/* Placeholder for livestream image */}
+            <div className="h-40 bg-zinc-700 flex items-center justify-center">
+              <img
+                src="/classic-nigt.webp"
+                alt="Khmer Classical Night"
+                className="object-cover w-full h-full"
+              />
+            </div>
             <div className="p-4 flex flex-col justify-between flex-1">
               <div className="space-y-1 mb-4">
                 <h2 className="text-xl font-semibold">Khmer Classical Night</h2>
