@@ -1,46 +1,58 @@
 // pages/login.tsx
 import Head from "next/head";
 
-export default function LoginPage() {
+export default function RoleSelectionPage() {
   return (
     <>
       <Head>
-        <title>Theater Admin Login</title>
+        <title>Login | Choose Role</title>
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
 
-      <div className="flex items-center justify-center min-h-screen bg-zinc-900 text-white">
-        <div className="bg-zinc-800 p-8 rounded-lg shadow-lg w-full max-w-md">
-          <h1 className="text-2xl font-bold text-center mb-6">Theater Admin Login</h1>
-          <form className="space-y-4">
-            <div>
-              <label htmlFor="email" className="block text-sm mb-1">Email</label>
-              <input
-                id="email"
-                type="email"
-                placeholder="admin@example.com"
-                className="w-full p-2 rounded bg-zinc-700 text-white focus:outline-none"
-              />
-            </div>
-            <div>
-              <label htmlFor="password" className="block text-sm mb-1">Password</label>
-              <input
-                id="password"
-                type="password"
-                placeholder="••••••••"
-                className="w-full p-2 rounded bg-zinc-700 text-white focus:outline-none"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-yellow-400 text-black py-2 rounded font-semibold hover:bg-yellow-300 transition"
+      <div className="min-h-screen bg-zinc-900 text-white flex flex-col items-center justify-center px-4">
+        <div className="text-center mb-10">
+          <h1 className="text-3xl font-bold mb-2">Welcome to KhmerLive</h1>
+          <p className="text-zinc-400">Please choose your role to continue</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl w-full">
+          {/* Theater Option */}
+          <div className="bg-zinc-800 rounded-lg shadow-lg p-6 flex flex-col items-center hover:shadow-yellow-400/20 transition">
+            <img
+              src="/images/theater-icon.png"
+              alt="Theater"
+              className="w-20 h-20 mb-4"
+            />
+            <h2 className="text-xl font-semibold mb-2">Theater</h2>
+            <p className="text-sm text-zinc-400 text-center mb-4">
+              Manage livestreams, upload performances, view analytics, and customize your channel.
+            </p>
+            <a
+              href="/theater/login"
+              className="mt-auto bg-yellow-400 text-black py-2 px-6 rounded font-semibold hover:bg-yellow-300 transition"
             >
-              Login
-            </button>
-          </form>
-          <p className="text-sm text-center text-zinc-400 mt-4">
-            Forgot your password? <a href="#" className="text-yellow-400 hover:underline">Reset here</a>
-          </p>
+              Login as Theater
+            </a>
+          </div>
+
+          {/* Audience Option */}
+          <div className="bg-zinc-800 rounded-lg shadow-lg p-6 flex flex-col items-center hover:shadow-yellow-400/20 transition">
+            <img
+              src="/images/audience-icon.png"
+              alt="Audience"
+              className="w-20 h-20 mb-4"
+            />
+            <h2 className="text-xl font-semibold mb-2">Audience</h2>
+            <p className="text-sm text-zinc-400 text-center mb-4">
+              Explore upcoming shows, purchase tickets, and enjoy exclusive cultural performances.
+            </p>
+            <a
+              href="/audience/login"
+              className="mt-auto bg-yellow-400 text-black py-2 px-6 rounded font-semibold hover:bg-yellow-300 transition"
+            >
+              Login as Audience
+            </a>
+          </div>
         </div>
       </div>
     </>
